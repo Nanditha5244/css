@@ -1,0 +1,89 @@
+* {
+  @import url("https://fonts.cdnfonts.com/css/google-sans");
+  font-family: "Product Sans Medium", sans-serif;
+}
+
+body {
+  background: #7987b5;
+  background: linear-gradient(
+    133deg,
+    rgb(147, 161, 204) 30%,
+    rgb(246, 196, 13) 100%
+  );
+}
+#head:hover {
+  background: #0b0d26;
+  background: radial-gradient(
+    circle,
+    rgb(74, 12, 247) 40%,
+    rgba(252, 70, 107, 1) 60%
+  );
+  background-clip: text;
+  color: transparent;
+}
+form {
+  width: 600px;
+}
+fieldset {
+  border: 3px solid blue;
+  border-radius: 20px;
+}
+input:required {
+  border: 2px solid red;
+}
+input:optional {
+  border: 3px dashed rgb(14, 241, 10);
+}
+input:read-only {
+  background-color: blue;
+  color: rgb(245, 253, 2);
+}
+input[type="radio"]:checked {
+  height: 20px;
+  width: 20px;
+}
+input[type="radio"]:checked + label {
+  font-style: sans-serif;
+  color: brown;
+}
+input[type="submit"] {
+  border: 3px solid red;
+  border-radius: 20px;
+}
+input[type="reset"] {
+  border: 3px solid red;
+  border-radius: 20px;
+}
+select {
+  background-color: darkorange;
+  border-radius: 15px;
+  cursor: pointer;
+}
+input:focus {
+  background-color: rgb(155, 102, 169);
+}
+input[type="text"] + span {
+  display: none;
+}
+input[type="text"]:hover + span {
+  display: inline;
+  font-style: oblique;
+}
+img {
+  display: none;
+}
+input[type="email"]:focus:valid ~ img#valid {
+  display: inline;
+  height: 20px;
+  width: 20px;
+}
+input[type="email"]:focus:invalid ~ img#invalid {
+  display: inline;
+  height: 20px;
+  width: 20px;
+}
+legend {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: oblique;
+  font-size: small;
+}
